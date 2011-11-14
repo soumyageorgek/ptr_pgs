@@ -1,0 +1,16 @@
+) There is a powerful tool called "valgrind" used for
+   detecting memory management bugs in C code. Learn 
+   elementary valgrind usage and write a blog post about
+   it. 
+
+   Links:
+
+   http://valgrind.org/docs/manual/quick-start.html#quick-start.prepare
+
+   http://tldp.org/HOWTO/Valgrind-HOWTO/
+
+b) Read "split.c". Complete the "split" function. Try to
+   use dynamic allocation. The builtin function "strstr"
+   may be used.
+
+
