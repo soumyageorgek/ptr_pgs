@@ -1,0 +1,150 @@
+
+Here is a sample question and answer:
+
+What would be the output of the following C program?
+
+main()
+{
+	int i = 0;
+	scanf("%d", i);
+}
+
+Ans: Segfault. Reason: scanf, when called with "%d" as format string,
+expects the address of an integer as parameter. But what you are passing
+to scanf is the value stored in `i', which is 0. Scanf will interpret this
+value as a memory address and it will try to store the number read from the
+keyboard to location 0. This will result in a segfault.
+
+---------------------------------------------------------
+
+Explain the outputs of the following programs in a similar way:
+
+1) 
+
+main()
+{
+	int i;
+	scanf("%d", i);
+}
+
+------------------------------------------------------
+2)
+
+main()
+{
+	char *s;
+
+	scanf("%s", s);
+}
+
+--------------------------------------------
+3)
+
+main()
+{
+	char s;
+	scanf("%s", s);
+}
+
+----------------------------------------
+4)
+
+main()
+{
+	char s[100] = "abcd";
+	scanf("%s", s[0]);
+}
+
+------------------------------------
+
+5)
+
+main()
+{
+	char s[100] = "abcd";
+	scanf("%s", *s);
+
+}
+
+--------------------------------------
+
+6)
+
+main()
+{
+	char s[100] = "abcd";
+	scanf("%s", **s);
+}
+
+------------------------------------
+
+7) For the program given below, draw the memory
+representation of the array s.
+
+
+main()
+{
+	char *s[] = {"abc", "def", "ijk"};
+
+}
+	
+-------------------------------------
+
+8)
+
+main()
+{
+	char *s[] = {"abc", "def", "ijk"};
+
+	printf("%s", s[0]);
+
+}
+
+-------------------------------------
+
+9)
+
+main()
+{
+	char *s[] = {"abc", "def", "ijk"};
+
+	printf("%d", *s[0]);
+
+}
+
+--------------------------------------
+
+10)
+
+main()
+{
+	char *s[] = {"abc", "def", "ijk"};
+
+	printf("%d", **s[0]);
+
+}
+
+----------------------------------------
+
+11)
+
+
+main()
+{
+	char *s[] = {"abc", "def", "ijk"};
+
+	printf("%s", *s[0]);
+
+}
+------------------------------------------
+
+12)
+
+main()
+{
+	char *s[] = {"abc", "def", "ijk"};
+
+	printf("%s", s);
+
+}
+------------------------------------------

@@ -1,0 +1,32 @@
+
+a) Find out what a "named pipe" is in Unix and demonstrate
+how you can create one (Hint: use the "mknod" command)
+
+b) The "ln" command can be used for creating "links". There are
+two kinds of links - soft and hard. Demonstrate how you can create
+both kinds of links and find out the difference between the two.
+
+c) Experiment with the "xargs" command (read the man page). Demonstrate
+its working.
+
+d) Experiment with the "tee" command. Demonstrate its working.
+
+e) Use the "find" command to recursively find:
+
+   a) All files whose name ends in .c
+
+   b) All files whose size exceeds 10k.
+
+f) Use the "dd" command to create a file exactly 10 mega bytes in size.
+
+g) Create an ext2 file system on this file using "mke2fs" command.
+
+h) Find out what is meant by a "loopback mount". Demonstrate loop back
+mount using the file which you created in steps (f) and (g).
+
+
+i) Use "mknod" to create a character special file with major number 100 and
+minor number 23.
+
+
+

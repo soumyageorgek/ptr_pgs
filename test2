@@ -1,0 +1,74 @@
+
+1)
+
+Find out the significance of the value returned by "scanf".
+
+On Unix systems, when you hit Ctrl-D on the keyboard, it is
+an indication that we have reached end-of-file; that is, we 
+are not going to input any more data.
+
+Find out the value returned by "scanf" when you hit Ctrl-D.
+
+--------------------------
+
+2) Write a program which will keep on reading numbers
+from the keyboard (one per line) until you hit Ctrl-D. When
+you hit Ctrl-D, the program will print the sum of these
+numbers.
+
+====================================
+
+3) Here is a skeleton C program:
+
+main()
+{
+	char *s[5];
+	int i;
+
+
+	/* a loop which reads and stores strings */
+
+	/* a loop which prints back the stored strings */
+
+}
+
+Your program should read 5 strings (using a for loop) and store
+them into memory. Assume each string is maximum 20 bytes long.
+
+After reading and storing 5 strings, the program should print
+back all the 5 strings.
+
+You should not use any other variables in your code.
+-------------------------------------
+
+4)
+
+Do the same program (program 3, but now your skeleton code
+looks like this):
+
+main()
+{
+	char **s;
+	int i;
+
+}
+
+-------------------------------------
+
+5) Use the C libray function `qsort' to sort the 
+following array:
+
+int a [] = {1, 10, 2, 5, 4, 3};
+
+(read the man page of qsort)
+
+------------------------------------
+
+6) Use "qsort" to sort the following array:
+
+char *s[] = {"pqr", "def", "abc"};
+
+(after sorting, if you print s[0], s[1], s[2],
+you should get "abc", "def", "pqr")
+
+------------------------------------------
